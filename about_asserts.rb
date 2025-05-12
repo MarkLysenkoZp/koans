@@ -7,7 +7,7 @@ class AboutAsserts < Neo::Koan
 
   # We shall contemplate truth by testing reality, via asserts.
   def test_assert_truth
-    assert true  # Теперь тест пройдёт
+    assert true  
   end
   
   # Enlightenment may be more easily achieved with appropriate
