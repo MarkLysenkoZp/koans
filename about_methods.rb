@@ -22,12 +22,16 @@ class AboutMethods < Neo::Koan
     #
     # Ruby doesn't know if you mean:
     #
-    #   assert_equal(5, my_global_method(2), 3)
+    #   assert_equal(5, my_global_method(2), 3) this is the wrong way
     # or
     #   assert_equal(5, my_global_method(2, 3))
     #
     # Rewrite the eval string to continue.
     #
+  end
+
+  def test_sometimes_missing_parentheses_are_ambiguous_variant_two
+    assert_equal(5, my_global_method(2, 3)) # This is a variation of the previous method
   end
 
   # NOTE: wrong number of arguments is not a SYNTAX error, but a
